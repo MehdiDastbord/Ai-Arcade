@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Maze</title>
+
+<link rel="stylesheet" href="aimaze.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🤖 AI Maze</h1>
+
+    <div class="top-bar">
+
+        <button id="generateBtn">Generate Maze</button>
+        <button id="restartBtn">Restart</button>
+
+    </div>
+
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <p id="status">Press Generate to start</p>
+
+    <!-- کنترل موبایل -->
+    <div class="controls">
+
+        <button onclick="move(0,-1)">⬆️</button>
+
+        <div class="row">
+            <button onclick="move(-1,0)">⬅️</button>
+            <button onclick="move(1,0)">➡️</button>
+        </div>
+
+        <button onclick="move(0,1)">⬇️</button>
+
+    </div>
+
+</div>
+
+<script src="aimaze.js"></script>
+
+</body>
+</html>
