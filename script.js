@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     break;
 
                 case "Memory Match":
-                    alert("Memory Match is coming soon...");
+                    window.location.href = "games/memory/memory.html";
                     break;
 
                 case "Asteroid Dodge":
