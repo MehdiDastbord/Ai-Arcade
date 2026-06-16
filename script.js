@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     break;
 
                 case "Breakout":
-                    alert("Breakout is coming soon...");
+                    window.location.href = "games/breakout/breakout.html";
                     break;
 
                 case "Runner":
