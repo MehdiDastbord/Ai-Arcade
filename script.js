@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     break;
 
                 case "Racing":
-                    alert("Racing is coming soon...");
+                    window.location.href =
+                        "games/racing/racing.html";
                     break;
 
                 case "Space Shooter":
