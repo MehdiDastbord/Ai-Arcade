@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gameCards.forEach(card => {
 
-        const gameName = card.querySelector("h3").textContent;
+        const gameName = card.querySelector("h3").textContent.trim();
 
         card.addEventListener("click", () => {
 
@@ -61,7 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     break;
 
                 default:
-                    alert(gameName);
+                    console.log("Game not found:", gameName);
+                    alert("Game not found: " + gameName);
             }
 
         });
