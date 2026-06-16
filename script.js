@@ -53,11 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     break;
 
                 case "Aim Trainer":
-                    alert("Aim Trainer is coming soon...");
+                    window.location.href = "games/aimtrainer/aimtrainer.html";
                     break;
 
                 case "AI Maze":
-                    alert("AI Maze is coming soon...");
+                    window.location.href = "games/aimaze/aimaze.html";
                     break;
 
                 default:
