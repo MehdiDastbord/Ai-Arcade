@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     break;
 
                 case "Asteroid Dodge":
-                    alert("Asteroid Dodge is coming soon...");
+                    window.location.href = "games/asteroid/asteroid.html";
                     break;
 
                 case "Aim Trainer":
