@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     break;
 
                 case "Runner":
-                    alert("Runner is coming soon...");
+                    window.location.href = "games/runner/runner.html";
                     break;
 
                 case "Memory Match":
