@@ -4,15 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (playBtn) {
         playBtn.addEventListener("click", () => {
-
-            const gamesSection = document.querySelector(".games-section");
-
-            if (gamesSection) {
-                gamesSection.scrollIntoView({
-                    behavior: "smooth"
-                });
-            }
-
+            document.querySelector(".games-section").scrollIntoView({
+                behavior: "smooth"
+            });
         });
     }
 
@@ -20,18 +14,58 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gameCards.forEach(card => {
 
+        const gameName = card.querySelector("h3").textContent;
+
         card.addEventListener("click", () => {
 
-            const gameName = card.querySelector("h3").textContent;
+            switch (gameName) {
 
-            alert(
-                `${gameName}\n\nThis game page will be connected in the next steps.`
-            );
+                case "Snake AI":
+                    window.location.href = "games/snake/snake.html";
+                    break;
+
+                case "Flappy Bird":
+                    alert("Flappy Bird is coming soon...");
+                    break;
+
+                case "Racing":
+                    alert("Racing is coming soon...");
+                    break;
+
+                case "Space Shooter":
+                    alert("Space Shooter is coming soon...");
+                    break;
+
+                case "Breakout":
+                    alert("Breakout is coming soon...");
+                    break;
+
+                case "Runner":
+                    alert("Runner is coming soon...");
+                    break;
+
+                case "Memory Match":
+                    alert("Memory Match is coming soon...");
+                    break;
+
+                case "Asteroid Dodge":
+                    alert("Asteroid Dodge is coming soon...");
+                    break;
+
+                case "Aim Trainer":
+                    alert("Aim Trainer is coming soon...");
+                    break;
+
+                case "AI Maze":
+                    alert("AI Maze is coming soon...");
+                    break;
+
+                default:
+                    alert(gameName);
+            }
 
         });
 
     });
 
 });
-
-console.log("AI Arcade Loaded Successfully");
