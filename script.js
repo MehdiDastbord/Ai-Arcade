@@ -21,22 +21,19 @@ document.addEventListener("DOMContentLoaded", () => {
             switch (gameName) {
 
                 case "Snake AI":
-                    window.location.href =
-                        "games/snake/snake.html";
+                    window.location.href = "games/snake/snake.html";
                     break;
 
                 case "Flappy Bird":
-                    window.location.href =
-                        "games/flappybird/flappybird.html";
+                    window.location.href = "games/flappybird/flappybird.html";
                     break;
 
                 case "Racing":
-                    window.location.href =
-                        "games/racing/racing.html";
+                    window.location.href = "games/racing/racing.html";
                     break;
 
                 case "Space Shooter":
-                    alert("Space Shooter is coming soon...");
+                    window.location.href = "games/spaceshooter/spaceshooter.html";
                     break;
 
                 case "Breakout":
